@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>mypost02</title>
+    <link href="/2024/06/10/mypost02/"/>
+    <url>/2024/06/10/mypost02/</url>
+    
+    <content type="html"><![CDATA[<h1 id="how-to-insert-images-into-post"><a href="#how-to-insert-images-into-post" class="headerlink" title="how to insert images into post"></a>how to insert images into post</h1><p>(when using vscode to write Markdown file, use ‘ctrl+shift+v’ and tip the top-right corner icon to open the preview window.)</p><p>there are three ways to insert images into the post.</p><ol><li>use the hexo module ‘asset_img’;</li><li>use Markdown syntax;</li></ol><h2 id="modify-this-configuration-in-the-main-blog-directory"><a href="#modify-this-configuration-in-the-main-blog-directory" class="headerlink" title="modify this configuration in the main blog directory:"></a>modify this configuration in the main blog directory:</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-attr">post_asset_folder</span>: <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><img src="/2024/06/10/mypost02/image00.png" class="" title="this is the first way to insert image into hexo."><p>this is the first way:</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">&#123;% asset_img image00.png this <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">first</span> way <span class="hljs-keyword">to</span> insert image <span class="hljs-keyword">into</span> hexo. %&#125;<br></code></pre></td></tr></table></figure><p>turn on this configuration to generate a new resource folder with the same folder name as the post when creating article, which will be used to store the images. </p><h2 id="create-a-new-post"><a href="#create-a-new-post" class="headerlink" title="create a new post:"></a>create a new post:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new post mypost02<br></code></pre></td></tr></table></figure><p>we can find the new folder ‘mypost02’ in the path ‘.&#x2F;source&#x2F;_posts’, and new created file ‘mypost02.md’:</p><img src="/2024/06/10/mypost02/image01.png" class="" title="this is the first way to insert image into hexo."><p><strong>to use Markdown to insert images,</strong> in terminal run:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm i -s hexo-asset-link<br><br></code></pre></td></tr></table></figure><p>use the local path under ‘source’, such as &#x2F;2024&#x2F;06&#x2F;10&#x2F;mypost02&#x2F;image02.png.</p><p><img src="/2024/06/10/mypost02/image02.png" alt="mypost02/image02.png"></p><p>this is the second way to insert image using markdown:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">![mypost02/image02.png](/2024/06/10/mypost02/image02.png)<br></code></pre></td></tr></table></figure><h2 id="reference"><a href="#reference" class="headerlink" title="reference:"></a>reference:</h2><p>you can refer to this link:<br><a href="https://hexo.io/zh-cn/docs/asset-folders.html">oficial website about hexo</a></p><p><a href="https://chrismroberts.com/2020/01/06/using-markdown-in-hexo-to-add-images/">how to add image to hexo with markdown</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>mypost01</title>
+    <link href="/2024/06/10/mypost01/"/>
+    <url>/2024/06/10/mypost01/</url>
+    
+    <content type="html"><![CDATA[<h2 id="heading-2"><a href="#heading-2" class="headerlink" title="heading 2"></a>heading 2</h2><h3 id="heading-3"><a href="#heading-3" class="headerlink" title="heading 3"></a>heading 3</h3><p>this is new post: </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new post <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>then,</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo g -d<br>$ hexo s<br></code></pre></td></tr></table></figure><p>continue…</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2024/06/10/hello-world/"/>
+    <url>/2024/06/10/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="hexo-handbook-and-fluid-hexo-handbook"><a href="#hexo-handbook-and-fluid-hexo-handbook" class="headerlink" title="hexo handbook and fluid hexo handbook"></a>hexo handbook and fluid hexo handbook</h3><p><a href="https://fluid-dev.github.io/hexo-fluid-docs/">fluid</a><br><a href="https://hexo.io/zh-cn/">hexo</a></p><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
